@@ -9,3 +9,20 @@ Saving varies by the type of work you are doing:
 -- *Git repositories that you clone into the Sandbox are NOT automatically saved.* In this case, you are responsible for committing and pushing your work to GitHub. 
 
 To learn more about the Sandbox, please visit http://help.learn.co/technical-support/learn-ide-in-browser/ide-in-browser-sandbox
+
+
+
+Procedure DivideBaguetteEvenly(baguette, n):
+  baguette_length = measure(baguette)
+  even_length = baguette_length / n
+  collection = []
+ 
+  while baguette_length > even_length:
+    piece, rest = cut_bread(baguette, even_length)
+    collection.add(piece)
+ 
+    baguette = rest
+    baguette_length = measure(baguette)
+ 
+  even_pieces = collection
+  return even_pieces
